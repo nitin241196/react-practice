@@ -4,21 +4,11 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
-}
+//create Component
 
-const user = {
-  firstName: 'Nitin',
-  lastName: 'kumar'
-};
+const element = ( <h1>Hi there</h1> );
 
-const element = (
-  <h1>
-    Hello, {formatName(user)}!
-  </h1>
-);
-
+//put component into html page
 ReactDOM.render(
   element,
   document.getElementById('root')
